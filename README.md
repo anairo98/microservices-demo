@@ -1,6 +1,9 @@
 # Microservice Demo Deployment in RH OpenShift
 Online Boutique is a cloud-first microservices demo application. The application is a web-based e-commerce app where users can browse items, add them to the cart, and purchase them. Deploy this e-commerce store in RH OpenShift.
 
+## Link to original Repository with further informations
+[Original Repository](https://github.com/GoogleCloudPlatform/microservices-demo)
+
 ## Architecture
 ![image](https://github.com/user-attachments/assets/2a8ddc79-ce80-4773-9fe0-ae46e1ee5a25)
 
