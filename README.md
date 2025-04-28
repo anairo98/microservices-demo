@@ -16,7 +16,7 @@ Online Boutique is a cloud-first microservices demo application. The application
 3. Create Kubernetes Objects by importing the *kubernetes-manifests.yaml* file
 
 > If the Pods crashes, the reason is probably the UserID of the Deployments. Scale down the Deployment to zero pods and again up to one and check out the *Error Message*. Commonly, you need to adjust the User ID (runAsUser, runAsGroup, fsGroup) with the given ID range in the *Error Message*. Every Namespace in OpenShift has a different User ID and the User ID is higher than in Docker Compose e.g. (1000 vs. 10080000). User IDs of 1000 are not accepted in RH OpenShift!
-> Alternatively, you can set the securityContext of the container as follows:
+> Alternatively, you can set the securityContext of the container like this:
 ```bash
     spec:
       serviceAccountName: frontend
